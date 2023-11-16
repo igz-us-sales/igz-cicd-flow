@@ -40,7 +40,7 @@ class AppConfig(BaseSettings):
     label_column: str = "target"
     allow_validation_failure: bool = True
     ohe_columns: List[str] = ["sex", "cp", "slope", "thal", "restecg"]
-    test_size: float = 0.2
+    test_size: float = 0.1
     deploy_model_name: str = "model"
     deploy_condition_metric: str = "evaluation_accuracy"
     force_deploy: bool = False
